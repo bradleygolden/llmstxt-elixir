@@ -1,5 +1,4 @@
-# LLM Coding Guidelines
+# Index of Elixir llms.txt files
 
-## Elixir
-
-See [Elixir Best Practices Guide](./elixir/llms.txt)
+https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/llms.txt
+https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/llms.txt
