@@ -1,0 +1,37 @@
+# Elixir Testing Guidelines
+
+## General Principles
+
+> Use `ExUnit` for writing tests. Import it using `use ExUnit.Case`.
+
+> Run tests concurrently whenever possible by setting `async: true` at the module level.
+
+> Utilize `setup` and `setup_all` blocks for test setup. Prefer named setup functions for clarity.
+
+> Employ tags (`@tag`) to categorize and filter tests.
+
+> Leverage doctests (`doctest/1`) to ensure examples in documentation are correct and up-to-date.
+
+## Testing Concurrent Components
+
+> Focus on testing the client API of `GenServer`s rather than their internal state.
+
+> Start supervised `GenServer`s for tests to mimic production environments.
+
+> Use `Task.await/2` when testing asynchronous operations initiated by `Task`.
+
+> Handle task results and `:DOWN` messages within the `handle_info/2` callback of OTP behaviours (like `GenServer`) instead of blocking with `Task.await/2` directly in the test process, especially for long-running or supervised tasks.
+
+## Testing Anti-patterns
+
+> Avoid using `GenServer`s solely for code organization; they are meant for managing state, concurrency, and distribution.
+
+## References
+
+- [ExUnit Documentation](https://hexdocs.pm/ex_unit/ExUnit.html)
+- [ExUnit Callbacks (setup/setup_all)](https://hexdocs.pm/ex_unit/ExUnit.Callbacks.html)
+- [ExUnit Tags](https://hexdocs.pm/ex_unit/ExUnit.Case.html#module-tags)
+- [ExUnit Doctests](https://hexdocs.pm/ex_unit/ExUnit.DocTest.html)
+- [GenServer Documentation](https://hexdocs.pm/elixir/GenServer.html)
+- [Task Documentation](https://hexdocs.pm/elixir/Task.html)
+- [Testing Anti-patterns (Mocks and explicit contracts)](https://hexdocs.pm/elixir/master/testing-anti-patterns.html)

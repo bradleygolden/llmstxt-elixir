@@ -1,0 +1,5 @@
+# LLM Coding Guidelines
+
+## Elixir
+
+See [Elixir Best Practices Guide](./elixir/llms.txt)

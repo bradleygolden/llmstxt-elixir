@@ -1,0 +1,13 @@
+# Elixir Programming Principles
+
+> Prefer readability and clarity in code. Avoid overly complex or "clever" solutions that obscure intent.
+
+> Prefer immutability. Leverage Elixir's immutable data structures and avoid side effects where possible.
+
+> Avoid boolean obsession. Do not overuse boolean flags as function arguments or struct fields; consider using more descriptive types (atoms, structs) or pattern matching instead.
+
+## References
+
+*   [Writing Readable Elixir Code](https://hexdocs.pm/elixir/writing-readable-elixir-code.html)
+*   [Basic Types - Immutability (Elixir Getting Started)](https://elixir-lang.org/getting-started/basic-types.html#immutability)
+*   [Boolean obsession](https://hexdocs.pm/elixir/main/anti-patterns.html#boolean-obsession)

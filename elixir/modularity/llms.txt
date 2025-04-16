@@ -1,0 +1,27 @@
+# Elixir Modularity and Function Design
+
+> Prefer short, focused functions that perform a single task. This aligns with general Clean Code principles.
+
+> Prefer using private functions (`defp`) for internal implementation details to keep the public API clean and explicit.
+
+> Prefer organizing related functions into modules (often called contexts) based on application boundaries or features, promoting separation of concerns.
+
+> Prefer using pattern matching in function heads for clarity and conciseness, especially for handling different cases or data structures.
+
+> Avoid complex extractions within function bodies. If extracting nested data becomes complex, consider helper functions or dedicated data transformation steps.
+
+> Avoid functions with excessively long parameter lists. Consider passing a map or struct, or breaking the function into smaller ones.
+
+> Avoid namespace trespassing. Do not directly call functions or access data structures from deeply nested modules of another context or library. Rely on the public API.
+
+> Avoid defining multiple function clauses for unrelated purposes within the same function name. Use different function names for distinct operations.
+
+## References
+
+*   [Defining a Public API (Writing Elixir Libraries)](https://hexdocs.pm/elixir/writing-elixir-libraries.html#defining-a-public-api)
+*   [Contexts (Phoenix Docs - Concept applies generally)](https://hexdocs.pm/phoenix/contexts.html)
+*   [Pattern Matching (Elixir Getting Started)](https://elixir-lang.org/getting-started/pattern-matching.html)
+*   [Complex extractions](https://hexdocs.pm/elixir/main/anti-patterns.html#complex-extractions)
+*   [Long params](https://hexdocs.pm/elixir/main/anti-patterns.html#long-params)
+*   [Namespace trespassing](https://hexdocs.pm/elixir/main/anti-patterns.html#namespace-trespassing)
+*   [Unrelated multi-clause func](https://hexdocs.pm/elixir/main/anti-patterns.html#unrelated-multi-clause-func)

@@ -1,0 +1,16 @@
+# Elixir Process Anti-patterns
+
+> Avoid organizing code solely by process type (e.g., all GenServers in one module). Group by domain or feature instead.
+
+> Avoid scattered process interfaces. Define a clear API module for interacting with processes.
+
+> Avoid sending unnecessary data between processes. Send only the required information.
+
+> Avoid unsupervised processes. Ensure processes are properly supervised within a supervision tree.
+
+## References
+
+*   [Code org by process](https://hexdocs.pm/elixir/main/anti-patterns.html#code-org-by-process)
+*   [Scattered process interfaces](https://hexdocs.pm/elixir/main/anti-patterns.html#scattered-process-interfaces)
+*   [Sending unnecessary data](https://hexdocs.pm/elixir/main/anti-patterns.html#sending-unnecessary-data)
+*   [Unsupervised processes](https://hexdocs.pm/elixir/main/anti-patterns.html#unsupervised-processes)

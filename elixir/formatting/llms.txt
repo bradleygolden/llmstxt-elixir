@@ -1,0 +1,11 @@
+# Elixir Formatting Guidelines
+
+> Use `mix format` to automatically format Elixir code. This ensures consistency across the codebase.
+
+> Keep lines reasonably short, ideally under 100 characters, to enhance readability. `mix format` helps enforce this with its `line_length` option.
+
+> Use whitespace consistently to separate logical blocks of code, but avoid excessive blank lines.
+
+## References
+
+- [Mix.Tasks.Format (Mix Documentation)](https://hexdocs.pm/mix/master/Mix.Tasks.Format.html)

@@ -1,0 +1,12 @@
+# Elixir Naming Conventions
+
+> Use `snake_case` for variables, function names, and module attributes.
+
+> Use `CamelCase` for module names and struct names.
+
+> Choose descriptive and meaningful names for variables, functions, and modules. Avoid overly short or cryptic names.
+
+## References
+
+- [Naming Conventions - Variables (Elixir Docs)](https://hexdocs.pm/elixir/naming-conventions.html#variables)
+- [Naming Conventions - Modules and Structs (Elixir Docs)](https://hexdocs.pm/elixir/naming-conventions.html#modules-and-structs)

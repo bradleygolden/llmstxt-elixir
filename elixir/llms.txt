@@ -1,0 +1,51 @@
+# Elixir Best Practices Guide
+
+This guide aggregates best practices for Elixir development, covering various aspects of coding style, structure, and common patterns.
+
+## Principles
+
+See [Programming Principles](./principles/llms.txt) for core guidelines on writing maintainable Elixir code.
+
+## Formatting
+
+See [Formatting Guidelines](./formatting/llms.txt) for rules on code layout and using `mix format`.
+
+## Naming
+
+See [Naming Conventions](./naming/llms.txt) for standards on naming variables, functions, and modules.
+
+## Control Flow
+
+See [Control Flow Guidelines](./control_flow/llms.txt) for structuring conditional logic and flow.
+
+## Modularity
+
+See [Modularity and Function Design](./modularity/llms.txt) for organizing code into functions and modules.
+
+## Documentation
+
+See [Documentation Guidelines](./documentation/llms.txt) for using `@moduledoc`, `@doc`, `@spec`, and comments effectively.
+
+## Error Handling
+
+See [Error Handling Guidelines](./error_handling/llms.txt) for strategies on managing errors and exceptions.
+
+## Data Structures
+
+See [Data Structures and Pipelines](./data_structures/llms.txt) for guidance on using common data structures and the pipe operator.
+
+## Processes
+
+See [Process Anti-patterns](./processes/llms.txt)
+
+## Metaprogramming
+
+See [Metaprogramming Anti-patterns](./metaprogramming/llms.txt)
+
+## Configuration
+
+See [Configuration Guidelines](./configuration/llms.txt)
+
+## Testing
+
+See [Testing Guidelines](./testing/llms.txt)

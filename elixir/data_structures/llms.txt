@@ -1,0 +1,29 @@
+# Elixir Data Structures and Pipelines
+
+> Prefer using Structs over Maps when you need a defined set of keys and default values, providing compile-time checks. Use Maps for arbitrary key-value data.
+
+> Prefer using functions from the `Enum` module for common operations on collections (lists, maps).
+
+> Prefer using the pipe operator (`|>`) to chain function calls for improved readability, especially for data transformations.
+
+> Avoid creating atoms dynamically (e.g., from user input or external data) as the atom table is not garbage-collected and can lead to memory exhaustion. Use strings or `String.to_existing_atom/1` if necessary.
+
+> Avoid non-assertive map access (e.g., `map.key`). Prefer `Map.get/3` or pattern matching (`%{key: value}`) to handle cases where the key might be missing, preventing potential `KeyError`.
+
+> Avoid non-assertive pattern matching where a match might fail unexpectedly. Use guards or more specific patterns to ensure matches succeed or handle failures gracefully.
+
+> Avoid defining structs with 32 or more fields. Such large structs often indicate a design issue; consider breaking them down into smaller, more focused structs.
+
+> Avoid primitive obsession. If a primitive value (string, integer) has significant meaning or behavior associated with it, consider wrapping it in a dedicated struct or module.
+
+## References
+
+*   [Structs (Elixir Docs)](https://hexdocs.pm/elixir/structs.html)
+*   [Maps (Elixir Docs)](https://hexdocs.pm/elixir/maps.html)
+*   [Enum Module (Elixir Docs)](https://hexdocs.pm/elixir/Enum.html)
+*   [Kernel pipe operator |>/2 (Elixir Docs)](https://hexdocs.pm/elixir/Kernel.html#%7C%3E/2)
+*   [Dynamic atoms](https://hexdocs.pm/elixir/main/anti-patterns.html#dynamic-atoms)
+*   [Non-assertive map access](https://hexdocs.pm/elixir/main/anti-patterns.html#non-assertive-map-access)
+*   [Non-assertive pattern matching](https://hexdocs.pm/elixir/main/anti-patterns.html#non-assertive-pattern-matching)
+*   [Structs >= 32 fields](https://hexdocs.pm/elixir/main/anti-patterns.html#structs--32-fields)
+*   [Primitive obsession](https://hexdocs.pm/elixir/main/anti-patterns.html#primitive-obsession)
