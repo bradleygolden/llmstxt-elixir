@@ -1,20 +1,7 @@
 # Elixir Documentation Guidelines
+> Best practices for writing effective documentation in Elixir using `@moduledoc`, `@doc`, `@spec`, and comments, while avoiding common pitfalls.
 
-> Use `@moduledoc` to provide a high-level description of the module's purpose.
-
-> Use `@doc` to document public functions, explaining their purpose, parameters, and return values.
-
-> Prefer using `@spec` to define typespecs for functions. This improves code clarity and enables static analysis tools like Dialyzer.
-
-> Prefer comments that explain the "why" behind the code, not just the "what". Assume the reader understands Elixir syntax and avoid redundant comments.
-
-> Do not leave commented-out code in the codebase. Use version control history instead.
-
-> Avoid comments overuse. Ensure comments add value and don't state the obvious.
-
-## References
-
-*   [Module Documentation (Writing Documentation - Elixir Docs)](https://hexdocs.pm/elixir/writing-documentation.html#module-documentation)
-*   [Function Documentation (Writing Documentation - Elixir Docs)](https://hexdocs.pm/elixir/writing-documentation.html#function-documentation)
-*   [Typespecs (Elixir Docs)](https://hexdocs.pm/elixir/typespecs.html)
-*   [Comments overuse](https://hexdocs.pm/elixir/main/anti-patterns.html#comments-overuse)
+## Resources
+* [Writing Documentation](https://hexdocs.pm/elixir/writing-documentation.html): Official Elixir guide covering `@moduledoc` and `@doc`.
+* [Typespecs](https://hexdocs.pm/elixir/typespecs.html): Hexdocs for Elixir typespecs (`@spec`).
+* [Anti-Patterns: Comments overuse](https://hexdocs.pm/elixir/main/anti-patterns.html#comments-overuse): Discussion on avoiding excessive or redundant comments.

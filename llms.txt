@@ -1,4 +1,6 @@
 # Index of Elixir llms.txt files
+> Top-level index for Elixir llms.txt collections.
 
-https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/llms.txt
-https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/llms.txt
+## Collections
+* [Core Elixir Topics](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/llms.txt): Index for core language features and best practices.
+* [Elixir Libraries](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/llms.txt): Index for common Elixir libraries like Phoenix.

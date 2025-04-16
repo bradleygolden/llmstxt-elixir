@@ -1,7 +1,6 @@
 # Elixir Configuration Guidelines
-
 > Avoid using application configuration for libraries. Libraries should expose configuration options via function arguments or initialization functions.
 
-## References
-
-*   [Using app config for libs](https://hexdocs.pm/elixir/main/anti-patterns.html#using-app-config-for-libs)
+## Resources
+* [Anti-Patterns: Using app config for libs](https://hexdocs.pm/elixir/main/anti-patterns.html#using-app-config-for-libs): Official Elixir documentation explaining why libraries shouldn't rely on application config.
+* [Config](https://hexdocs.pm/elixir/Config.html): Hexdocs for the Elixir `Config` module, used for reading application configuration.

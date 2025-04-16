@@ -1,23 +1,11 @@
 # Elixir Control Flow Guidelines
+> Best practices for structuring conditional logic, using boolean operators, handling errors, and avoiding common control flow pitfalls in Elixir.
 
-> Prefer using `cond` or pattern matching over complex nested `if/else` statements for clarity.
-
-> Prefer explicit boolean operators (`and`, `or`, `not`) over symbolic ones (`&&`, `||`, `!`) when working with boolean values. Use symbolic operators only when the first argument is guaranteed to be a boolean.
-
-> Avoid using `if/else` when pattern matching or function clauses offer a more idiomatic and clearer solution.
-
-> Avoid complex logic within the `else` block of a `with` statement. Refactor complex `else` cases into separate functions or consider alternative control flow structures.
-
-> Avoid using exceptions for normal control flow. Exceptions should signal exceptional or unexpected situations. Use tuples like `{:ok, value}` / `{:error, reason}` for expected outcomes.
-
-> Avoid non-assertive truthiness checks (e.g., `if map.key do ...`). Prefer explicit checks like `if map.key != nil do ...` or pattern matching to handle `nil` and `false` distinctly when necessary.
-
-## References
-
-*   [Kernel.SpecialForms cond/1 (Elixir Docs)](https://hexdocs.pm/elixir/Kernel.SpecialForms.html#cond/1)
-*   [Case, cond, and if (Elixir Getting Started)](https://elixir-lang.org/getting-started/case-cond-and-if.html#case)
-*   [Boolean Operators (Elixir Docs)](https://hexdocs.pm/elixir/operators.html#boolean-operators)
-*   [Strict Boolean Operators (Elixir Docs)](https://hexdocs.pm/elixir/operators.html#strict-boolean-operators-and-or-not)
-*   [Complex else in `with`](https://hexdocs.pm/elixir/main/anti-patterns.html#complex-else-in-with)
-*   [Exceptions for control-flow](https://hexdocs.pm/elixir/main/anti-patterns.html#exceptions-for-control-flow)
-*   [Non-assertive truthiness](https://hexdocs.pm/elixir/main/anti-patterns.html#non-assertive-truthiness)
+## Resources
+* [Kernel.SpecialForms cond/1](https://hexdocs.pm/elixir/Kernel.SpecialForms.html#cond/1): Hexdocs for the `cond` special form.
+* [Case, cond, and if (Getting Started)](https://elixir-lang.org/getting-started/case-cond-and-if.html#case): Elixir guide covering basic control flow structures.
+* [Boolean Operators](https://hexdocs.pm/elixir/operators.html#boolean-operators): Hexdocs for `||`, `&&`, `!`.
+* [Strict Boolean Operators](https://hexdocs.pm/elixir/operators.html#strict-boolean-operators-and-or-not): Hexdocs for `or`, `and`, `not`.
+* [Anti-Patterns: Complex else in `with`](https://hexdocs.pm/elixir/main/anti-patterns.html#complex-else-in-with): Discussion on avoiding complex logic in `with/else`.
+* [Anti-Patterns: Exceptions for control-flow](https://hexdocs.pm/elixir/main/anti-patterns.html#exceptions-for-control-flow): Discussion on proper use of exceptions vs. tagged tuples.
+* [Anti-Patterns: Non-assertive truthiness](https://hexdocs.pm/elixir/main/anti-patterns.html#non-assertive-truthiness): Discussion on explicit checks vs. implicit truthiness.

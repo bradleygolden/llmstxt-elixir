@@ -1,51 +1,40 @@
 # Elixir Best Practices Guide
+> Index of llms.txt files covering core Elixir language features, coding style, and best practices.
 
 This guide aggregates best practices for Elixir development, covering various aspects of coding style, structure, and common patterns.
 
 ## Principles
-
-See [Programming Principles](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/principles/llms.txt) for core guidelines on writing maintainable Elixir code.
+* [Programming Principles](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/principles/llms.txt): Core guidelines on writing maintainable Elixir code.
 
 ## Formatting
-
-See [Formatting Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/formatting/llms.txt) for rules on code layout and using `mix format`.
+* [Formatting Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/formatting/llms.txt): Rules on code layout and using `mix format`.
 
 ## Naming
-
-See [Naming Conventions](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/naming/llms.txt) for standards on naming variables, functions, and modules.
+* [Naming Conventions](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/naming/llms.txt): Standards on naming variables, functions, and modules.
 
 ## Control Flow
-
-See [Control Flow Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/control_flow/llms.txt) for structuring conditional logic and flow.
+* [Control Flow Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/control_flow/llms.txt): Structuring conditional logic and flow.
 
 ## Modularity
-
-See [Modularity and Function Design](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/modularity/llms.txt) for organizing code into functions and modules.
+* [Modularity and Function Design](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/modularity/llms.txt): Organizing code into functions and modules.
 
 ## Documentation
-
-See [Documentation Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/documentation/llms.txt) for using `@moduledoc`, `@doc`, `@spec`, and comments effectively.
+* [Documentation Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/documentation/llms.txt): Using `@moduledoc`, `@doc`, `@spec`, and comments effectively.
 
 ## Error Handling
-
-See [Error Handling Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/error_handling/llms.txt) for strategies on managing errors and exceptions.
+* [Error Handling Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/error_handling/llms.txt): Strategies on managing errors and exceptions.
 
 ## Data Structures
-
-See [Data Structures and Pipelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/data_structures/llms.txt) for guidance on using common data structures and the pipe operator.
+* [Data Structures and Pipelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/data_structures/llms.txt): Guidance on using common data structures and the pipe operator.
 
 ## Processes
-
-See [Process Anti-patterns](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/processes/llms.txt)
+* [Process Anti-patterns](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/processes/llms.txt): Common pitfalls when working with Elixir processes.
 
 ## Metaprogramming
-
-See [Metaprogramming Anti-patterns](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/metaprogramming/llms.txt)
+* [Metaprogramming Anti-patterns](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/metaprogramming/llms.txt): Common pitfalls when using metaprogramming.
 
 ## Configuration
-
-See [Configuration Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/configuration/llms.txt)
+* [Configuration Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/configuration/llms.txt): Best practices for application configuration.
 
 ## Testing
-
-See [Testing Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/testing/llms.txt)
+* [Testing Guidelines](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/testing/llms.txt): Best practices for testing Elixir applications.

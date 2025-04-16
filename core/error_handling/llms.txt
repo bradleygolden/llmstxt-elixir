@@ -1,16 +1,8 @@
 # Elixir Error Handling Guidelines
+> Guidelines for idiomatic error handling in Elixir, emphasizing {:ok, value}/{:error, reason} tuples, the "Let it crash" philosophy, and avoiding common anti-patterns.
 
-> Prefer using `{:ok, value}` and `{:error, reason}` tuples for functions that can fail predictably. Avoid raising exceptions for expected error conditions.
-
-> Prefer letting processes crash ("Let it crash" philosophy) for unexpected errors, relying on supervisors to handle recovery.
-
-> Avoid catching generic exceptions (`try...rescue Exception`) unless absolutely necessary for cleanup or specific error reporting at application boundaries.
-
-> Avoid alternative return types (e.g., returning `nil` or `false` on failure instead of `{:error, reason}`). Stick to idiomatic `{:ok, ...}` / `{:error, ...}` tuples for consistency.
-
-## References
-
-*   [OK Tuples and Error Tuples (Elixir Getting Started)](https://elixir-lang.org/getting-started/case-cond-and-if.html#ok-tuples-and-error-tuples)
-*   [Tuples (Patterns and Guards - Elixir Docs)](https://hexdocs.pm/elixir/patterns-and-guards.html#tuples)
-*   [Supervisors (Mix and OTP - Elixir Getting Started)](https://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html#supervisors)
-*   [Alt return types](https://hexdocs.pm/elixir/main/anti-patterns.html#alt-return-types)
+## Resources
+* [OK Tuples and Error Tuples (Getting Started)](https://elixir-lang.org/getting-started/case-cond-and-if.html#ok-tuples-and-error-tuples): Introduction to using tagged tuples for success/error cases.
+* [Supervisors (Getting Started)](https://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html#supervisors): Introduction to OTP supervisors and the "Let it crash" philosophy.
+* [Anti-Patterns: Alt return types](https://hexdocs.pm/elixir/main/anti-patterns.html#alt-return-types): Discussion on avoiding inconsistent return types for errors.
+* [try, catch, and rescue (Kernel.SpecialForms)](https://hexdocs.pm/elixir/Kernel.SpecialForms.html#try/1): Hexdocs detailing exception handling mechanisms (use rescue sparingly).

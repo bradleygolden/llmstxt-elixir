@@ -1,0 +1,8 @@
+# Phoenix Contexts & Schemas
+> Guidelines for organizing business logic and data access in Phoenix applications using Context modules as API boundaries and Ecto Schemas for data definition.
+
+## Resources
+* [Phoenix Contexts Guide](https://hexdocs.pm/phoenix/contexts.html): Official guide explaining the concept and benefits of using Contexts in Phoenix.
+* [Ecto Schemas Guide](https://hexdocs.pm/ecto/Ecto.Schema.html): Hexdocs for `Ecto.Schema`, used to define data structure and types.
+* [Ecto Changesets Guide](https://hexdocs.pm/ecto/Ecto.Changeset.html): Hexdocs for `Ecto.Changeset`, used for data validation and casting within Context functions.
+* [Ecto Associations Guide](https://hexdocs.pm/ecto/associations.html): Hexdocs covering how to define relationships between Schemas (`belongs_to`, `has_many`, etc.).

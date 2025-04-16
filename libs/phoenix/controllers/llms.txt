@@ -1,0 +1,9 @@
+# Phoenix Controllers (`Phoenix.Controller`)
+> Guidelines for handling web requests in Phoenix using Controllers, interacting with Contexts, using Plugs for middleware, and rendering various response types (HTML, JSON, redirects).
+
+## Resources
+* [Phoenix Controllers Guide](https://hexdocs.pm/phoenix/controllers.html): Official guide covering controller actions, request lifecycle, and rendering.
+* [Phoenix.Controller](https://hexdocs.pm/phoenix/Phoenix.Controller.html): Hexdocs for the core controller module, including functions for rendering (`render`, `json`, `text`, `redirect`) and flash messages (`put_flash`).
+* [Phoenix Plugs Guide](https://hexdocs.pm/phoenix/plug.html): Official guide explaining how to use Plugs for middleware in controllers and pipelines.
+* [Plug.Conn](https://hexdocs.pm/plug/Plug.Conn.html): Hexdocs for the connection struct (`conn`) passed through plugs and controller actions.
+* [Phoenix Routing Guide (Path Helpers)](https://hexdocs.pm/phoenix/routing.html#path-helpers): Documentation covering the use of verified path helpers (`~p`).

@@ -1,4 +1,6 @@
 # Index of Elixir Library llms.txt files
+> Index of llms.txt files for common Elixir libraries.
 
-# Add links to library-specific llms.txt files here, e.g.:
-# https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/ecto/llms.txt
+## Libraries
+* [Phoenix Framework](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/phoenix/llms.txt): Index for Phoenix framework best practices and guides.
+* [Phoenix LiveView](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/phoenix_live_view/llms.txt): Best practices and guides for Phoenix LiveView.

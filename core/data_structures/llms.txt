@@ -1,29 +1,13 @@
 # Elixir Data Structures and Pipelines
+> Guidelines for using Elixir's core data structures like structs and maps, leveraging the Enum module, employing the pipe operator, and avoiding common pitfalls like dynamic atoms and primitive obsession.
 
-> Prefer using Structs over Maps when you need a defined set of keys and default values, providing compile-time checks. Use Maps for arbitrary key-value data.
-
-> Prefer using functions from the `Enum` module for common operations on collections (lists, maps).
-
-> Prefer using the pipe operator (`|>`) to chain function calls for improved readability, especially for data transformations.
-
-> Avoid creating atoms dynamically (e.g., from user input or external data) as the atom table is not garbage-collected and can lead to memory exhaustion. Use strings or `String.to_existing_atom/1` if necessary.
-
-> Avoid non-assertive map access (e.g., `map.key`). Prefer `Map.get/3` or pattern matching (`%{key: value}`) to handle cases where the key might be missing, preventing potential `KeyError`.
-
-> Avoid non-assertive pattern matching where a match might fail unexpectedly. Use guards or more specific patterns to ensure matches succeed or handle failures gracefully.
-
-> Avoid defining structs with 32 or more fields. Such large structs often indicate a design issue; consider breaking them down into smaller, more focused structs.
-
-> Avoid primitive obsession. If a primitive value (string, integer) has significant meaning or behavior associated with it, consider wrapping it in a dedicated struct or module.
-
-## References
-
-*   [Structs (Elixir Docs)](https://hexdocs.pm/elixir/structs.html)
-*   [Maps (Elixir Docs)](https://hexdocs.pm/elixir/maps.html)
-*   [Enum Module (Elixir Docs)](https://hexdocs.pm/elixir/Enum.html)
-*   [Kernel pipe operator |>/2 (Elixir Docs)](https://hexdocs.pm/elixir/Kernel.html#%7C%3E/2)
-*   [Dynamic atoms](https://hexdocs.pm/elixir/main/anti-patterns.html#dynamic-atoms)
-*   [Non-assertive map access](https://hexdocs.pm/elixir/main/anti-patterns.html#non-assertive-map-access)
-*   [Non-assertive pattern matching](https://hexdocs.pm/elixir/main/anti-patterns.html#non-assertive-pattern-matching)
-*   [Structs >= 32 fields](https://hexdocs.pm/elixir/main/anti-patterns.html#structs--32-fields)
-*   [Primitive obsession](https://hexdocs.pm/elixir/main/anti-patterns.html#primitive-obsession)
+## Resources
+* [Structs](https://hexdocs.pm/elixir/structs.html): Hexdocs for Elixir structs.
+* [Maps](https://hexdocs.pm/elixir/maps.html): Hexdocs for Elixir maps.
+* [Enum Module](https://hexdocs.pm/elixir/Enum.html): Hexdocs for the Enum module for working with collections.
+* [Kernel pipe operator |>/2](https://hexdocs.pm/elixir/Kernel.html#%7C%3E/2): Hexdocs for the pipe operator.
+* [Anti-Patterns: Dynamic atoms](https://hexdocs.pm/elixir/main/anti-patterns.html#dynamic-atoms): Discussion on avoiding dynamic atom creation.
+* [Anti-Patterns: Non-assertive map access](https://hexdocs.pm/elixir/main/anti-patterns.html#non-assertive-map-access): Discussion on safe map key access.
+* [Anti-Patterns: Non-assertive pattern matching](https://hexdocs.pm/elixir/main/anti-patterns.html#non-assertive-pattern-matching): Discussion on robust pattern matching.
+* [Anti-Patterns: Structs >= 32 fields](https://hexdocs.pm/elixir/main/anti-patterns.html#structs--32-fields): Discussion on avoiding overly large structs.
+* [Anti-Patterns: Primitive obsession](https://hexdocs.pm/elixir/main/anti-patterns.html#primitive-obsession): Discussion on using dedicated types over primitives.

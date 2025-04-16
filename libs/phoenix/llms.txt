@@ -1,0 +1,12 @@
+# Phoenix Framework llms.txt Index
+> Index of llms.txt files covering specific aspects of the Phoenix framework.
+
+This index points to llms.txt files covering specific aspects of the Phoenix framework.
+
+## Topics
+* [LiveView](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/phoenix_live_view/llms.txt): Best practices for Phoenix LiveView.
+* [Routing](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/phoenix/routing/llms.txt): Guidelines for defining routes in Phoenix.
+* [Controllers](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/phoenix/controllers/llms.txt): Best practices for Phoenix controllers.
+* [Contexts & Schemas](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/phoenix/contexts_schemas/llms.txt): Guidelines for designing contexts and Ecto schemas.
+* [Channels](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/phoenix/channels/llms.txt): Best practices for using Phoenix Channels.
+* [Views & Templates](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/phoenix/views_templates/llms.txt): Guidelines for Phoenix views and templates.
