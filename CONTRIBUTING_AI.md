@@ -7,6 +7,7 @@
 *   **Accuracy:** Information must be factually correct and reflect current Elixir best practices.
 *   **Conciseness:** Provide information clearly and succinctly. Use bullet points or short paragraphs.
 *   **Structure:** Adhere strictly to the established directory structure.
+*   **Specification Adherence:** All `llms.txt` files MUST strictly follow the structure and formatting rules defined in the official specification at https://llmstxt.org/.
 
 **File Structure Overview:**
 *   `/core`: Contains `llms.txt` files for fundamental Elixir language features, concepts, and standard library modules (e.g., `Enum`, `Map`, OTP concepts like `GenServer`).
@@ -24,36 +25,29 @@
     *   **Core Concept:** Check if a relevant subdirectory exists under `/core`. If not, create a new, appropriately named subdirectory (e.g., `/core/new_concept/`).
     *   **Library:** Check if a relevant subdirectory exists under `/libs`. If not, create a new, appropriately named subdirectory (e.g., `/libs/new_library/`).
 3.  **Create/Modify `llms.txt`:**
-    *   Inside the target directory, create or modify the `llms.txt` file.
-    *   Populate it with concise, accurate information, best practices, and potentially small, illustrative code snippets relevant to the topic/library. Focus on information useful for an LLM to understand context or generate better Elixir code.
+    *   Inside the target directory, create or modify the `llms.txt` file according to the `llmstxt.org` specification:
+        *   Start with a clear `# H1 Title` for the topic.
+        *   Add a concise `> Blockquote summary` providing essential context about the topic.
+        *   Include minimal inline text (if any) before the H2 section. This section should *not* contain headings.
+        *   **Prioritize External Links:** The primary goal is to curate links to authoritative resources. Create a `## Resources` section.
+        *   **Research & Link:** Find relevant URLs (preferring official Hexdocs pages, then official guides) for the topic.
+        *   **Format Links:** List these URLs under `## Resources` using the specified format: `* [Link Title](URL): Brief description`.
 4.  **Update Index Files (Crucial):**
     *   If you added a new subdirectory under `/core`, add a reference or link to `/core/new_concept/llms.txt` within `/core/llms.txt`.
     *   If you added a new subdirectory under `/libs`, add a reference or link to `/libs/new_library/llms.txt` within `/libs/llms.txt`.
     *   Maintain the formatting and structure of the index files.
 
-**Example `llms.txt` Content (Conceptual):**
+**Example `llms.txt` Content (Link-Focused):**
 
 ```
-# /core/pattern_matching/llms.txt
+# Phoenix Routing
 
-## Elixir Pattern Matching
+> Defines how incoming HTTP requests are matched to controller actions in Phoenix applications. Covers defining routes, using helpers, resources, and pipelines.
 
-- Fundamental feature in Elixir used for destructuring data types.
-- Used in function heads, `case`, `cond`, `with`, and variable assignment.
-- The `=` operator is the match operator, not assignment in the traditional sense.
-- `_` ignores a value during matching.
-- Pin operator `^` allows matching against an existing variable's value rather than rebinding.
-
-# Example: Function Heads
-def handle_reply({:ok, data}), do: {:ok, process(data)}
-def handle_reply({:error, reason}), do: {:error, log(reason)}
-
-# Example: Case Statement
-case user do
-  %{name: name, age: age} when age > 18 -> IO.puts "#{name} is an adult."
-  %{name: name} -> IO.puts "#{name} is a minor or age unknown."
-  _ -> IO.puts "Unknown user structure."
-end
+## Resources
+*   [Phoenix.Router](https://hexdocs.pm/phoenix/Phoenix.Router.html): Official Hexdocs documentation for the main routing module.
+*   [Phoenix Routing Guide](https://hexdocs.pm/phoenix/routing.html): Comprehensive guide covering all aspects of routing in Phoenix.
+*   [Plug.Router](https://hexdocs.pm/plug/Plug.Router.html): Documentation for the underlying Plug router used by Phoenix.
 ```
 
 **Final Check:** Ensure your changes adhere to the principles and structure outlined above before completing the contribution.
