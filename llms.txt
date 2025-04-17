@@ -2,4 +2,4 @@
 > Curated best‑practice guides for Elixir, Phoenix, and LiveView.
 
 ## Core Elixir
-- [Elixir Core Best Practices](guides/elixir-core/elixir_core_best_practices.md) : Opinionated guide to code style, OTP, testing, and more.
+- [Elixir Core Best Practices](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/guides/elixir-core/elixir_core_best_practices.md) : Opinionated guide to code style, OTP, testing, and more.
