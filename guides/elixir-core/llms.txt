@@ -1,0 +1,8 @@
+# Elixir Core Guide Index
+> Deep‑dive resources for writing high‑quality, dependency‑free Elixir.
+
+## Best Practices
+- [Elixir Core Best Practices](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/guides/elixir-core/elixir_core_best_practices.md)
+
+## Anti‑Patterns & Code Smells
+- [Elixir Official Code Smell Guide](https://hexdocs.pm/elixir/main/what-anti-patterns.html) : Mirrored compile‑time docs.

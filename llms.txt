@@ -1,6 +1,5 @@
-# Index of Elixir llms.txt files
-> Top-level index for Elixir llms.txt collections.
+# Elixir Guides Repository
+> Curated best‑practice guides for Elixir, Phoenix, and LiveView.
 
-## Collections
-* [Core Elixir Topics](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/core/llms.txt): Index for core language features and best practices.
-* [Elixir Libraries](https://raw.githubusercontent.com/bradleygolden/llmstxt-elixir/refs/heads/main/libs/llms.txt): Index for common Elixir libraries like Phoenix.
+## Core Elixir
+- [Elixir Core Best Practices](guides/elixir-core/elixir_core_best_practices.md) : Opinionated guide to code style, OTP, testing, and more.

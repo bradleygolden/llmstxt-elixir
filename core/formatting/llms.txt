@@ -1,5 +1,0 @@
-# Elixir Formatting Guidelines
-> Guidelines for maintaining consistent code formatting in Elixir, primarily using the built-in `mix format` task.
-
-## Resources
-* [Mix.Tasks.Format](https://hexdocs.pm/mix/master/Mix.Tasks.Format.html): Hexdocs for the `mix format` task, the standard tool for formatting Elixir code.

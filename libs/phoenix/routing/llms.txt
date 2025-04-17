@@ -1,8 +1,0 @@
-# Phoenix Routing (`Phoenix.Router`)
-> Guidelines for defining HTTP routes in Phoenix, using pipelines for middleware, scopes for organization, and path helpers (`~p`) for URL generation.
-
-## Resources
-* [Phoenix Routing Guide](https://hexdocs.pm/phoenix/routing.html): Official guide covering route definition, scopes, pipelines, resources, and path helpers.
-* [Phoenix.Router](https://hexdocs.pm/phoenix/Phoenix.Router.html): Hexdocs for the router module and its macros (`get`, `post`, `resources`, `scope`, `pipeline`, etc.).
-* [Phoenix Plugs Guide](https://hexdocs.pm/phoenix/plug.html): Official guide explaining how plugs are used in router pipelines.
-* [Verified Routes (`~p`)](https://hexdocs.pm/phoenix/routing.html#verified-routes): Documentation section on using compile-time checked path helpers.

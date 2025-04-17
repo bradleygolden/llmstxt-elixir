@@ -1,9 +1,0 @@
-# Elixir Metaprogramming Anti-patterns
-> Common pitfalls to avoid when using Elixir's metaprogramming features like macros.
-
-## Resources
-* [Metaprogramming in Elixir](https://elixir-lang.org/getting-started/meta/macros.html): Official Elixir guide introducing macros and metaprogramming concepts.
-* [Anti-Patterns: Compile-time deps](https://hexdocs.pm/elixir/main/anti-patterns.html#compile-time-deps): Discussion on unnecessary compile-time coupling.
-* [Anti-Patterns: Large code gen](https://hexdocs.pm/elixir/main/anti-patterns.html#large-code-gen): Discussion on generating excessive code via macros.
-* [Anti-Patterns: Unnecessary macros](https://hexdocs.pm/elixir/main/anti-patterns.html#unnecessary-macros): Discussion on using macros where functions suffice.
-* [Anti-Patterns: `use` vs `import`](https://hexdocs.pm/elixir/main/anti-patterns.html#use-vs-import): Discussion on misusing `use` and `import`.

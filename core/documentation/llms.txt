@@ -1,7 +1,0 @@
-# Elixir Documentation Guidelines
-> Best practices for writing effective documentation in Elixir using `@moduledoc`, `@doc`, `@spec`, and comments, while avoiding common pitfalls.
-
-## Resources
-* [Writing Documentation](https://hexdocs.pm/elixir/writing-documentation.html): Official Elixir guide covering `@moduledoc` and `@doc`.
-* [Typespecs](https://hexdocs.pm/elixir/typespecs.html): Hexdocs for Elixir typespecs (`@spec`).
-* [Anti-Patterns: Comments overuse](https://hexdocs.pm/elixir/main/anti-patterns.html#comments-overuse): Discussion on avoiding excessive or redundant comments.

@@ -27,9 +27,14 @@
 3.  **Create/Modify `llms.txt`:**
     *   Inside the target directory, create or modify the `llms.txt` file according to the `llmstxt.org` specification:
         *   Start with a clear `# H1 Title` for the topic.
-        *   Add a concise `> Blockquote summary` providing essential context about the topic.
-        *   Include minimal inline text (if any) before the H2 section. This section should *not* contain headings.
-        *   **Prioritize External Links:** The primary goal is to curate links to authoritative resources. Create a `## Resources` section.
+        *   Add a concise `> Blockquote summary` providing essential context.
+        *   **Add Inline Guidance (Before H2):** In the section *before* any `## H2` headings, add concise, high-value guidance using Markdown lists, bold text, and code blocks. Focus on:
+            *   **Key Signatures/Callbacks:** Essential function/callback signatures with brief descriptions.
+            *   **Idiomatic Patterns:** Short code snippets or descriptions of common usage patterns.
+            *   **Common Pitfalls:** Brief mentions of frequent mistakes or anti-patterns.
+            *   **Configuration Examples:** Minimal, relevant config snippets if applicable.
+            *   **Important:** Do *not* use H2 or lower headings for this inline guidance section. Keep it focused and directly relevant to improving code generation.
+        *   **Add Resources Section:** Create a `## Resources` section.
         *   **Research & Link:** Find relevant URLs (preferring official Hexdocs pages, then official guides) for the topic.
         *   **Format Links:** List these URLs under `## Resources` using the specified format: `* [Link Title](URL): Brief description`.
 4.  **Update Index Files (Crucial):**
@@ -37,12 +42,23 @@
     *   If you added a new subdirectory under `/libs`, add a reference or link to `/libs/new_library/llms.txt` within `/libs/llms.txt`.
     *   Maintain the formatting and structure of the index files.
 
-**Example `llms.txt` Content (Link-Focused):**
+**Example `llms.txt` Content (Inline Guidance + Links):**
 
 ```
 # Phoenix Routing
 
 > Defines how incoming HTTP requests are matched to controller actions in Phoenix applications. Covers defining routes, using helpers, resources, and pipelines.
+
+**Key Module:** `Phoenix.Router`
+
+**Common Patterns:**
+*   Use `resources "/users", UserController` for standard CRUD routes.
+*   Group related routes under a `scope "/admin"` block.
+*   Define pipelines in the `:browser` or `:api` scope to apply plugs.
+
+**Common Pitfalls:**
+*   Forgetting to import `Phoenix.Router.Helpers` in views/controllers for path helpers.
+*   Creating overly complex, deeply nested scopes.
 
 ## Resources
 *   [Phoenix.Router](https://hexdocs.pm/phoenix/Phoenix.Router.html): Official Hexdocs documentation for the main routing module.

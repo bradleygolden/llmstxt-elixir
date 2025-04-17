@@ -1,9 +1,0 @@
-# Phoenix Views & Templates (`Phoenix.View`, `Phoenix.Template`, HEEx)
-> Guidelines for rendering HTML and other formats in Phoenix using View modules for helpers, HEEx templates for structure, function components for reusability, and layouts for common page elements.
-
-## Resources
-* [Phoenix Views Guide](https://hexdocs.pm/phoenix/views.html): Official guide covering the role of View modules and helpers.
-* [Phoenix Templates Guide](https://hexdocs.pm/phoenix/templates.html): Official guide covering EEx and HEEx templates, assigns, and layouts.
-* [Phoenix.Component (Function Components)](https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html): Hexdocs for defining reusable function components (used heavily with HEEx/LiveView).
-* [Phoenix.HTML](https://hexdocs.pm/phoenix_html/Phoenix.HTML.html): Hexdocs for HTML generation helpers (forms, links, tags), often used within templates and views.
-* [HEEx Templates (`.html.heex`)](https://hexdocs.pm/phoenix_live_view/assigns-eex.html): Documentation on the HEEx template syntax and features.

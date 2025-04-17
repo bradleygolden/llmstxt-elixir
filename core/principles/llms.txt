@@ -1,7 +1,0 @@
-# Elixir Programming Principles
-> Core principles for writing maintainable and idiomatic Elixir code, focusing on readability and immutability.
-
-## Resources
-* [Writing Readable Elixir Code](https://hexdocs.pm/elixir/writing-readable-elixir-code.html): Official guide on code clarity.
-* [Basic Types - Immutability (Getting Started)](https://elixir-lang.org/getting-started/basic-types.html#immutability): Explanation of immutability in Elixir.
-* [Anti-Patterns: Boolean obsession](https://hexdocs.pm/elixir/main/anti-patterns.html#boolean-obsession): Discussion on avoiding the overuse of booleans.

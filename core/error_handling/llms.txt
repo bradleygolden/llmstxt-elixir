@@ -1,8 +1,0 @@
-# Elixir Error Handling Guidelines
-> Guidelines for idiomatic error handling in Elixir, emphasizing {:ok, value}/{:error, reason} tuples, the "Let it crash" philosophy, and avoiding common anti-patterns.
-
-## Resources
-* [OK Tuples and Error Tuples (Getting Started)](https://elixir-lang.org/getting-started/case-cond-and-if.html#ok-tuples-and-error-tuples): Introduction to using tagged tuples for success/error cases.
-* [Supervisors (Getting Started)](https://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html#supervisors): Introduction to OTP supervisors and the "Let it crash" philosophy.
-* [Anti-Patterns: Alt return types](https://hexdocs.pm/elixir/main/anti-patterns.html#alt-return-types): Discussion on avoiding inconsistent return types for errors.
-* [try, catch, and rescue (Kernel.SpecialForms)](https://hexdocs.pm/elixir/Kernel.SpecialForms.html#try/1): Hexdocs detailing exception handling mechanisms (use rescue sparingly).

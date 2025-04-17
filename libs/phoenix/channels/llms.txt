@@ -1,8 +1,0 @@
-# Phoenix Channels (`Phoenix.Channel`, `Phoenix.Socket`)
-> Guidelines and concepts for building real-time features in Phoenix using Channels for bi-directional communication over WebSockets, including authentication, authorization, broadcasting, and presence tracking.
-
-## Resources
-* [Phoenix Channels Guide](https://hexdocs.pm/phoenix/channels.html): Official guide covering the concepts and usage of Phoenix Channels.
-* [Phoenix.Channel](https://hexdocs.pm/phoenix/Phoenix.Channel.html): Hexdocs for the `Phoenix.Channel` behaviour module.
-* [Phoenix.Socket](https://hexdocs.pm/phoenix/Phoenix.Socket.html): Hexdocs for the `Phoenix.Socket` module used for handling WebSocket connections.
-* [Phoenix.Presence](https://hexdocs.pm/phoenix/Phoenix.Presence.html): Hexdocs for the `Phoenix.Presence` module used for tracking connected clients on a topic.

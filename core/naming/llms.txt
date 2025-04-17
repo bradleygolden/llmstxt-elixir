@@ -1,5 +1,0 @@
-# Elixir Naming Conventions
-> Standard naming conventions for variables, functions, modules, and structs in Elixir.
-
-## Resources
-* [Naming Conventions (Elixir Docs)](https://hexdocs.pm/elixir/naming-conventions.html): Official guidelines covering `snake_case` for variables/functions and `CamelCase` for modules/structs.
